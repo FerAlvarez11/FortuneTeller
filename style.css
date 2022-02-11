@@ -370,6 +370,7 @@ to { width: 100% }
     animation-name: glow;
     animation-iteration-count: infinite;
     animation-duration: 5s;
+    display: block;
     
 }
 
