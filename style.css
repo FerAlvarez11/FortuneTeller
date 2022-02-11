@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+ background-color: #09080b;
+ max-width: 2000px;
+ text-align: center;
+}
+
+.container{
+    padding: 30px;
+      display: inline-block;
+  }
+
+.text{
+ font-family: quintessential;
+ overflow: hidden;
+ border-right: .15em solid rgb(255, 255, 255);
+ white-space: nowrap;
+ animation: typing 2s steps(20, end) forwards, blinking .8s infinite;
+ font-size: 1.6rem;
+ width: 0;
+ color: white;
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: white; }
+  }
+
+.fortuneTeller{
+ margin: 0 auto;
+ width:500px;
+ height: 500px;
+}
+
+.headWrap{
+    position: relative;
+    margin: 0px auto;
+    width: 500px;
+    height: 10px;
+}
+
+.turban{
+    position: relative;
+    margin: 0 auto;
+}
+
+.turban .right{
+   position: absolute;
+   background-color: rgb(28 9 46);
+   border-radius: 50%;
+   width: 90px;
+   height: 180px;
+   transform: rotate(-33deg);
+   z-index: 3;
+   left: 240px;
+}
+
+.turban .left{
+    position: absolute;
+    background-color: #35105b;
+    border-radius: 50%;
+    width: 90px;
+    height: 180px;
+    transform: rotate(33deg);
+    z-index: 3;
+    left: 170px;
+
+}
+
+ .jewel{
+    position: relative;
+    margin: 0 auto;
+    background: repeating-linear-gradient(
+        315deg,
+        white 1px, 
+        #ffc107 18px,
+        white 1px, 
+        #ffeb3b 31px);
+    border-radius: 50%;
+    width: 20px;
+    height: 49px;
+    top: 96px;
+    z-index: 4;
+    box-shadow:     
+    inset 0 0 4px #fff,
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+
+}
+
+.glowy{
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    top: 7px;
+    left: 3px;
+    z-index: 4;
+    background-color: white;
+    animation-name: glowy;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    border: 1px white solid;
+}
+
+.glowy2{
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    top: 34px;
+    left: 6px;
+    z-index: 4;
+    background-color: white;
+    animation-name: glowy;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    border: 1px white solid;
+}
+
+.glowy3{
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    top: 2px;
+    left: 5px;
+    z-index: 3;
+    background-color: white;
+    animation-name: glowy;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    border: 1px white solid;
+}
+
+.glowy4{
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    top: 32px;
+    left: 13px;
+    z-index: 4;
+    background-color: white;
+    animation-name: glowy;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    border: 1px white solid;
+}
+
+
+@keyframes glowy{
+   
+    20% {
+            box-shadow:    inset 0 0 50px #fff,      /* inner white */
+            inset 2px 0 80px rgb(229, 255, 0),   /* inner left magenta short */
+            inset -2px 0 80px rgb(248, 23, 15),  /* inner right cyan short */
+            inset 2px 0 300px rgb(229, 255, 0),  /* inner left magenta broad */
+            inset -2px 0 300px rgb(255, 81, 0), /* inner right cyan broad */
+            0 0 50px #fff,            /* outer white */
+            -10px 0 80px rgb(255, 0, 0),        /* outer left magenta */
+            10px 0 80px rgb(212, 255, 19);         /* outer right cyan */
+            animation-name: glow;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+        }
+    
+    }
+
+.face{
+    position: relative;
+    margin: 0 auto;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    z-index: 2;
+    background: linear-gradient(182deg, #000000, #301f40, rgb(204, 204, 255));
+    width: 130px;
+    height: 200px;
+    top: 14px;
+}
+
+.eyes{
+    position: absolute;
+}
+
+.eyes .right{
+    position: absolute;
+    background:linear-gradient(182deg, #555555, #dbdada, rgb(255 255 255));
+    border-radius: 50%;
+    width: 45px;
+    height: 20px;
+    z-index: 5;
+    top: 102px;
+    left: 11px;
+    border-color: #09080b;
+    border-width: 31px 0px 9px 0px;
+    border-style: solid;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.eyeball1{
+    position: absolute;
+    background-color: #09080b;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 6;
+    top: 131px;
+    left: 24px;
+}
+
+
+.eyes .left{
+    position: absolute;
+    background:linear-gradient(182deg, #555555, #dbdada, rgb(255 255 255));
+    border-radius: 50%;
+    width: 45px;
+    height: 20px;
+    z-index: 5;
+    top: 102px;
+    left: 75px;
+    border-color: #09080b;
+    border-width: 31px 0px 9px 0px;
+    border-style: solid;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.eyeball2{
+    position: absolute;
+    background-color: #09080b;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    z-index: 6;
+    top: 131px;
+    left: 87px;
+}
+
+@keyframes blink{
+   
+    0% {
+       background: #09080b;
+    }
+
+}
+.nose{
+    position: relative;
+    
+}
+
+.bridge{
+    position: relative;
+    margin: 0 auto;
+    background: linear-gradient(182deg,#433457, #bfb8e5, #bfb8e5);
+    border-radius: 100% 100% 50% 50%;
+    width: 11px;
+    height: 63px;
+    z-index: 5;
+    top: 112px;
+}
+
+.tip{
+
+    position: relative;
+    margin: 0 auto;
+    background-color: #bfb8e5;
+    border-radius: 50%;
+    width: 17px;
+    height: 18px;
+    z-index: 5;
+    top: 97px;
+}
+
+.nostril1{
+
+    position: absolute;
+    margin: 0 auto;
+    background: linear-gradient(182deg, #b3acbc, #bfb8e5);
+    border-radius: 50%;
+    width: 17px;
+    height: 7px;
+    z-index: 4;
+    left: 48px;
+    top: 163px;
+    transform: rotate(-33deg);
+}
+
+.nostril2{
+
+    position: absolute;
+    margin: 0 auto;
+    background: linear-gradient(182deg, #b3acbc, #bfb8e5);
+    border-radius: 50%;
+    width: 17px;
+    height: 7px;
+    z-index: 4;
+    left: 64px;
+    top: 163px;
+    transform: rotate(33deg);
+}
+
+.mouth{
+    position: absolute;
+    
+}
+
+.body{
+    position: relative;
+    margin: 0 auto;
+    background-color: rgb(28 9 46);
+    border-radius: 53% 47% 47% 53% / 100% 100% 0% 0%;
+    width: 400px;
+    height: 299px;
+    z-index: 1;
+    top: -115px;
+    box-shadow: 
+    -89px -102px 113px rgb(3, 3, 44), 
+    89px -102px 113px rgb(2, 2, 56);
+
+
+}
+
+.link{ 
+    position:absolute; 
+    border-radius: 111px;
+    width: 150px;
+    height: 150px;
+    z-index: 3;
+    top: 377px;
+    left: 172px;
+  
+  }   
+
+.cristalBall{
+    position: relative;
+    margin: 0 auto;
+    background: radial-gradient(white, yellow, rgb(255 0 0));
+    border-radius: 111px;
+    width: 150px;
+    height: 150px;
+    z-index: 2;
+    top: -300px;
+    box-shadow:  
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px rgb(229, 255, 0),   /* inner left magenta short */
+    inset -20px 0 80px rgb(248, 23, 15),  /* inner right cyan short */
+    inset 20px 0 300px rgb(229, 255, 0),  /* inner left magenta broad */
+    inset -20px 0 300px rgb(255, 81, 0), /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px rgb(255, 0, 0),        /* outer left magenta */
+    10px 0 80px rgb(212, 255, 19);         /* outer right cyan */
+    animation-name: glow;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    
+}
+
+.cristalBall:hover {
+    
+    animation-name: none;
+    animation-iteration-count: unset;
+    animation-duration: unset;
+    animation-delay: unset;
+    box-shadow:
+    -10px 0 80px rgb(255, 0, 0),        /* outer left magenta */
+    10px 0 80px rgb(212, 255, 19);         /* outer right cyan */
+
+
+}
+
+@keyframes glow{
+   
+20% {
+        box-shadow:    inset 0 0 50px #fff,      /* inner white */
+        inset 20px 0 80px rgb(229, 255, 0),   /* inner left magenta short */
+        inset -20px 0 80px rgb(248, 23, 15),  /* inner right cyan short */
+        inset 20px 0 300px rgb(229, 255, 0),  /* inner left magenta broad */
+        inset -20px 0 300px rgb(255, 81, 0), /* inner right cyan broad */
+        0 0 50px #fff,            /* outer white */
+        -10px 0 80px rgb(255, 0, 0),        /* outer left magenta */
+        10px 0 80px rgb(212, 255, 19);         /* outer right cyan */
+        animation-name: glow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+   75%{
+    box-shadow:    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+    animation-name: glow;
+    animation-iteration-count: infinite;
+
+   
+} 
+
+}
+
+.base{
+    position: relative;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 53% 47% 47% 53% / 100% 100% 0% 0%;
+    width: 222px;
+    height:65px;
+    z-index: 1;
+    top: -330px
+    ;
+
+}
+
+.table{
+    margin: 0 auto;
+    position: relative;
+    width: 500px;
+    z-index: 8;
+    background: black;
+    top: -339px;
+    height: 95px;
+    height: 57px;
+    border: 1px white solid;
+}
+
+.text2{
+    top: -400px;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    padding:23px;
+}
