@@ -257,7 +257,20 @@ to { width: 100% }
 @keyframes blink{
    
     0% {
-       background: #09080b;
+        background: #09080b;
+        width: 45px;
+        height: 16px;
+        animation-duration: 1s;
+    }
+    10%{
+        background:linear-gradient(182deg, #555555, #dbdada, rgb(255 255 255));
+        border-radius: 50%;
+        width: 45px;
+        height: 20px;
+        border-color: #09080b;
+        border-width: 31px 0px 9px 0px;
+        border-style: solid;
+
     }
 
 }
